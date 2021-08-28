@@ -32,7 +32,7 @@ function factors(arrayOfNums) {
     if (num % 2 === 0) {
       factorArray.push(2);
     }
-    for (let i = 3; i < num - 2; i += 2) {
+    for (let i = 3; i < num/2; i += 2) {
       if (!knownPrimes[i]) {
         knownPrimes[i] = isPrime(i);
       }
